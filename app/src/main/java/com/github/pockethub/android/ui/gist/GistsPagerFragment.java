@@ -18,8 +18,8 @@ package com.github.pockethub.android.ui.gist;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -149,3 +149,4 @@ public class GistsPagerFragment extends TabPagerFragment<GistQueriesPagerAdapter
         }
     }
 }
+

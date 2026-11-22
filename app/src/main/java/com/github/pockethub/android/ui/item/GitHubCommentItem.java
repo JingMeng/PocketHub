@@ -1,6 +1,6 @@
 package com.github.pockethub.android.ui.item;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -90,3 +90,4 @@ public class GitHubCommentItem extends BaseDataItem<GitHubComment, GitHubComment
         }
     }
 }
+

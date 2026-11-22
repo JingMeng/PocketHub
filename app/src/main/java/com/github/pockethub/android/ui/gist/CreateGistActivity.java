@@ -16,9 +16,9 @@
 package com.github.pockethub.android.ui.gist;
 
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -189,3 +189,4 @@ public class CreateGistActivity extends BaseActivity {
                 });
     }
 }
+

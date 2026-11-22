@@ -1,6 +1,6 @@
 package com.github.pockethub.android.ui.item.code;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;

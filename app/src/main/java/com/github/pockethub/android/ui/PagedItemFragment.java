@@ -17,8 +17,8 @@
 package com.github.pockethub.android.ui;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.meisolsson.githubsdk.model.Page;
 import com.xwray.groupie.Item;
@@ -153,3 +153,4 @@ public abstract class PagedItemFragment<E> extends ItemListFragment<E> {
         loadingIndicator.setVisible(hasMore);
     }
 }
+

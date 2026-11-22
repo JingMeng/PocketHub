@@ -1,6 +1,6 @@
 package com.github.pockethub.android.ui.item.dialog;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;

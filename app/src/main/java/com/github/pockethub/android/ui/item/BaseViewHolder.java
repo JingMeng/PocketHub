@@ -1,6 +1,6 @@
 package com.github.pockethub.android.ui.item;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.xwray.groupie.ViewHolder;
@@ -14,3 +14,4 @@ public class BaseViewHolder extends ViewHolder {
         ButterKnife.bind(this, rootView);
     }
 }
+

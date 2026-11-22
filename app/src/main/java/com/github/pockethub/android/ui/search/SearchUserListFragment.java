@@ -17,7 +17,7 @@ package com.github.pockethub.android.ui.search;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.rx.AutoDisposeUtils;
@@ -121,3 +121,4 @@ public class SearchUserListFragment extends PagedItemFragment<User> {
         return R.string.error_users_search;
     }
 }
+

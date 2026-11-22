@@ -17,9 +17,9 @@ package com.github.pockethub.android.ui.gist;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.tabs.TabLayout;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -175,3 +175,4 @@ public class GistFilesViewActivity extends PagerActivity {
         return adapter;
     }
 }
+

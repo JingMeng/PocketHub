@@ -1,8 +1,8 @@
 package com.github.pockethub.android.ui.item.news;
 
 import android.media.Image;
-import android.support.annotation.NonNull;
-import android.support.annotation.VisibleForTesting;
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;

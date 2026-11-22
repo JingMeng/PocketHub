@@ -22,8 +22,8 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.IntentCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.IntentCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebViewClient;
@@ -97,3 +97,4 @@ public class LoginWebViewActivity extends AppCompatActivity {
         setContentView(webView);
     }
 }
+

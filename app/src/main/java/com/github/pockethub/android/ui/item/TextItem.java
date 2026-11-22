@@ -1,8 +1,8 @@
 package com.github.pockethub.android.ui.item;
 
-import android.support.annotation.IdRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
+import androidx.annotation.IdRes;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
 import android.widget.TextView;
 
 import com.xwray.groupie.Item;
@@ -32,3 +32,4 @@ public class TextItem extends Item<ViewHolder> {
         return layoutId;
     }
 }
+

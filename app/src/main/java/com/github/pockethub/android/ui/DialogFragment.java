@@ -18,7 +18,7 @@ package com.github.pockethub.android.ui;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.pockethub.android.ui.base.BaseFragment;

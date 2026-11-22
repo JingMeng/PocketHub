@@ -17,7 +17,7 @@ package com.github.pockethub.android.ui.repo;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.rx.AutoDisposeUtils;
@@ -106,3 +106,4 @@ public class RepositoryContributorsFragment extends PagedItemFragment<User> {
         return R.string.loading;
     }
 }
+

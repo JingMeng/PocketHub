@@ -1,6 +1,6 @@
 package com.github.pockethub.android.ui.item;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.util.AvatarLoader;
@@ -38,3 +38,4 @@ public abstract class BaseDataItem<T, V extends BaseViewHolder> extends Item<V> 
     @Override
     public abstract V createViewHolder(@NonNull View itemView);
 }
+

@@ -17,7 +17,7 @@ package com.github.pockethub.android.ui.gist;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -105,3 +105,4 @@ public abstract class GistsFragment extends PagedItemFragment<Gist> {
         return new GistItem(avatars, item);
     }
 }
+

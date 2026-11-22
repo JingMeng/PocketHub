@@ -1,6 +1,6 @@
 package com.github.pockethub.android.ui.item.issue;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.widget.TextView;
 
 import com.github.pockethub.android.R;

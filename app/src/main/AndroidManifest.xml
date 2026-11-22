@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.github.pockethub.android">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -30,7 +29,7 @@
         android:name=".PocketHub">
 
         <activity
-            android:name="com.github.pockethub.android.ui.MainActivity"
+            android:name="com.github.pockethub.android.ui.MainActivity" android:exported="true"
             android:theme="@style/Theme.PocketHub.NavigationDrawer"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true">
@@ -46,7 +45,7 @@
                 android:value=".ui.search.SearchActivity" />
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.gist.CreateGistActivity"
+            android:name="com.github.pockethub.android.ui.gist.CreateGistActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/create_gist"
             android:parentActivityName="com.github.pockethub.ui.MainActivity"
@@ -71,7 +70,7 @@
                 android:value="com.github.pockethub.android.ui.MainActivity" />
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.IssueBrowseActivity"
+            android:name="com.github.pockethub.android.ui.issue.IssueBrowseActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true">
             <intent-filter>
@@ -85,7 +84,7 @@
                 android:value=".ui.issue.IssueSearchActivity" />
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.EditIssuesFilterActivity"
+            android:name="com.github.pockethub.android.ui.issue.EditIssuesFilterActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.repo.issues.filter.VIEW" />
@@ -94,7 +93,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.EditIssueActivity"
+            android:name="com.github.pockethub.android.ui.issue.EditIssueActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.repo.issues.edit.VIEW" />
@@ -103,7 +102,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.search.SearchActivity"
+            android:name="com.github.pockethub.android.ui.search.SearchActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true"
             android:label="@string/search_title"
@@ -117,7 +116,7 @@
                 android:resource="@xml/searchable_repos_users" />
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.FiltersViewActivity"
+            android:name="com.github.pockethub.android.ui.issue.FiltersViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true">
             <intent-filter>
@@ -127,7 +126,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.gist.GistsViewActivity"
+            android:name="com.github.pockethub.android.ui.gist.GistsViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.gists.VIEW" />
@@ -136,7 +135,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.gist.GistFilesViewActivity"
+            android:name="com.github.pockethub.android.ui.gist.GistFilesViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.gist.files.VIEW" />
@@ -145,7 +144,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.CreateCommentActivity"
+            android:name="com.github.pockethub.android.ui.issue.CreateCommentActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.issue.comment.create.VIEW" />
@@ -154,7 +153,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.EditCommentActivity"
+            android:name="com.github.pockethub.android.ui.issue.EditCommentActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.issue.comment.edit.VIEW" />
@@ -163,7 +162,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.gist.CreateCommentActivity"
+            android:name="com.github.pockethub.android.ui.gist.CreateCommentActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.gist.comment.create.VIEW" />
@@ -172,7 +171,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.gist.EditCommentActivity"
+            android:name="com.github.pockethub.android.ui.gist.EditCommentActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.gist.comment.edit.VIEW" />
@@ -181,7 +180,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.commit.CreateCommentActivity"
+            android:name="com.github.pockethub.android.ui.commit.CreateCommentActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.commit.comment.create.VIEW" />
@@ -190,7 +189,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.repo.RepositoryViewActivity"
+            android:name="com.github.pockethub.android.ui.repo.RepositoryViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true">
             <intent-filter>
@@ -204,7 +203,7 @@
                 android:value=".ui.issue.IssueSearchActivity" />
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.repo.RepositoryContributorsActivity"
+            android:name="com.github.pockethub.android.ui.repo.RepositoryContributorsActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true">
             <intent-filter>
@@ -214,7 +213,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.user.UserViewActivity"
+            android:name="com.github.pockethub.android.ui.user.UserViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true">
             <intent-filter>
@@ -224,7 +223,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.IssuesViewActivity"
+            android:name="com.github.pockethub.android.ui.issue.IssuesViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.issues.VIEW" />
@@ -247,7 +246,7 @@
         </service>
 
         <activity
-            android:name=".accounts.LoginActivity"
+            android:name=".accounts.LoginActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTop">
 
@@ -263,7 +262,7 @@
         </activity>
 
         <activity
-            android:name="com.github.pockethub.android.ui.user.UriLauncherActivity"
+            android:name="com.github.pockethub.android.ui.user.UriLauncherActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:excludeFromRecents="true">
             <intent-filter>
@@ -304,7 +303,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.issue.IssueSearchActivity"
+            android:name="com.github.pockethub.android.ui.issue.IssueSearchActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true"
             android:label="@string/search_title"
@@ -318,7 +317,7 @@
                 android:resource="@xml/searchable_issues" />
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.commit.CommitCompareViewActivity"
+            android:name="com.github.pockethub.android.ui.commit.CommitCompareViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/commit_compare_title">
             <intent-filter>
@@ -328,7 +327,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.commit.CommitViewActivity"
+            android:name="com.github.pockethub.android.ui.commit.CommitViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.commits.VIEW" />
@@ -337,7 +336,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.commit.CommitFileViewActivity"
+            android:name="com.github.pockethub.android.ui.commit.CommitFileViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.commit.file.VIEW" />
@@ -346,7 +345,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.pockethub.android.ui.ref.BranchFileViewActivity"
+            android:name="com.github.pockethub.android.ui.ref.BranchFileViewActivity" android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="com.github.pockethub.android.branch.file.VIEW" />
@@ -404,3 +403,4 @@
     </application>
 
 </manifest>
+

@@ -15,8 +15,8 @@
  */
 package com.github.pockethub.android.ui;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -104,3 +104,4 @@ public abstract class PagerActivity extends BaseActivity implements
         // Intentionally left blank
     }
 }
+

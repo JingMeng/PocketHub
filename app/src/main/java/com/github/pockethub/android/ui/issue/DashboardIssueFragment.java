@@ -17,7 +17,7 @@ package com.github.pockethub.android.ui.issue;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.R;
@@ -116,3 +116,4 @@ public class DashboardIssueFragment extends PagedItemFragment<Issue> {
         return new IssueDashboardItem(avatars, item);
     }
 }
+

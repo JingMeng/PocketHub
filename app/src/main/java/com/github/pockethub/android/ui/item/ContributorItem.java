@@ -1,7 +1,7 @@
 package com.github.pockethub.android.ui.item;
 
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.widget.TextView;
 
 import com.github.pockethub.android.R;
@@ -30,3 +30,4 @@ public class ContributorItem extends UserItem {
         return R.layout.contributor_item;
     }
 }
+

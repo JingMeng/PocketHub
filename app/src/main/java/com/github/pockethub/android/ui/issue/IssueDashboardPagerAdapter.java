@@ -17,7 +17,7 @@ package com.github.pockethub.android.ui.issue;
 
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.github.pockethub.android.R;
 import com.github.pockethub.android.ui.FragmentStatePagerAdapter;
@@ -98,3 +98,4 @@ public class IssueDashboardPagerAdapter extends FragmentStatePagerAdapter {
         }
     }
 }
+

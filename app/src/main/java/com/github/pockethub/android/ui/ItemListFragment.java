@@ -16,11 +16,11 @@
 package com.github.pockethub.android.ui;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -318,7 +318,7 @@ public abstract class ItemListFragment<E> extends DialogFragment implements
     }
 
     /**
-     * Get the {@link android.support.v7.widget.RecyclerView.LayoutManager} for
+     * Get the {@link androidx.recyclerview.widget.RecyclerView.LayoutManager} for
      * the {@link RecyclerView}
      *
      * @return recyclerView
@@ -475,3 +475,4 @@ public abstract class ItemListFragment<E> extends DialogFragment implements
         return false;
     }
 }
+

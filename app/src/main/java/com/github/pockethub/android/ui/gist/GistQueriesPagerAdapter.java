@@ -16,7 +16,7 @@
 package com.github.pockethub.android.ui.gist;
 
 import android.content.res.Resources;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.github.pockethub.android.R;
 import com.github.pockethub.android.ui.FragmentPagerAdapter;
@@ -72,3 +72,4 @@ public class GistQueriesPagerAdapter extends FragmentPagerAdapter {
         }
     }
 }
+

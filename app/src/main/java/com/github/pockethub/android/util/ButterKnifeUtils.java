@@ -6,6 +6,7 @@ import butterknife.ButterKnife;
 
 public class ButterKnifeUtils {
 
-    public static final ButterKnife.Action<View> GONE =
-            (view, index) -> view.setVisibility(View.GONE);
+    public static void hide(View view) {
+        view.setVisibility(View.GONE);
+    }
 }

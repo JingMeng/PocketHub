@@ -16,7 +16,7 @@
 package com.github.pockethub.android.ui.issue;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.ui.PagedItemFragment;
@@ -121,3 +121,4 @@ public class SearchIssueListFragment extends PagedItemFragment<Issue> {
         return new IssueItem(avatars, item, false);
     }
 }
+

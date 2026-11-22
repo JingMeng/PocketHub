@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2015 PocketHub
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ import android.app.Application;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.support.v4.util.ArrayMap;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 
 import com.github.pockethub.android.GitHubModule;
 import com.github.pockethub.android.PocketHub;
@@ -99,3 +99,4 @@ public class GistFilesViewActivityTest extends ActivityTest<GistFilesViewActivit
         assertEquals(0, pager.getCurrentItem());
     }
 }
+

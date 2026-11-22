@@ -19,7 +19,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -239,3 +239,4 @@ public class CommitListFragment extends PagedItemFragment<Commit> implements Dia
         return inflater.inflate(R.layout.fragment_commit_list, container, false);
     }
 }
+

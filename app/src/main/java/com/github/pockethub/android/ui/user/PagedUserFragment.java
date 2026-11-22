@@ -15,7 +15,7 @@
  */
 package com.github.pockethub.android.ui.user;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.ui.item.UserItem;
@@ -50,3 +50,4 @@ public abstract class PagedUserFragment extends PagedItemFragment<User> {
         }
     }
 }
+

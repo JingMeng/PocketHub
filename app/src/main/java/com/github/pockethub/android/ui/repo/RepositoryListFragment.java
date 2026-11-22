@@ -18,7 +18,7 @@ package com.github.pockethub.android.ui.repo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -298,3 +298,4 @@ public class RepositoryListFragment extends ItemListFragment<Repository>
         return R.string.error_repos_load;
     }
 }
+

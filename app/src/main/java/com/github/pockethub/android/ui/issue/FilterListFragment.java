@@ -17,7 +17,7 @@
 package com.github.pockethub.android.ui.issue;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.github.pockethub.android.R;
@@ -101,3 +101,4 @@ public class FilterListFragment extends ItemListFragment<IssueFilter> implements
         return compare;
     }
 }
+

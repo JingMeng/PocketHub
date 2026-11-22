@@ -16,9 +16,9 @@
 package com.github.pockethub.android.ui;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabContentFactory;
@@ -173,3 +173,4 @@ public abstract class TabPagerActivity<V extends PagerAdapter & FragmentProvider
         return adapter;
     }
 }
+

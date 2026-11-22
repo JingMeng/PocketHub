@@ -1,7 +1,7 @@
 package com.github.pockethub.android.ui.item.issue;
 
 import android.graphics.Color;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
@@ -41,9 +41,11 @@ public class IssueItem extends BaseDataItem<Issue, IssueItem.ViewHolder> {
     public void bind(@NonNull ViewHolder holder, int position) {
         List<Label> labels = getData().labels();
         if (showLabels && labels != null && !labels.isEmpty()) {
-            ButterKnife.apply(holder.labels, LABEL_SETTER, labels);
+            for (int i = 0; i < holder.labels.size(); i++) {
+                setLabel(holder.labels.get(i), labels, i);
+            }
         } else {
-            ButterKnife.apply(holder.labels, ButterKnifeUtils.GONE);
+            for (View label : holder.labels) label.setVisibility(View.GONE);
         }
 
         StyledText numberText = new StyledText();
@@ -83,7 +85,7 @@ public class IssueItem extends BaseDataItem<Issue, IssueItem.ViewHolder> {
         return new ViewHolder(itemView);
     }
 
-    private static final ButterKnife.Setter<View, List<Label>> LABEL_SETTER = (view, labels, i) -> {
+    private static void setLabel(View view, List<Label> labels, int i) {
         if (i >= 0 && i < labels.size()) {
             Label label = labels.get(i);
             if (!TextUtils.isEmpty(label.color())) {
@@ -94,7 +96,7 @@ public class IssueItem extends BaseDataItem<Issue, IssueItem.ViewHolder> {
         }
 
         view.setVisibility(View.GONE);
-    };
+    }
 
     public class ViewHolder extends BaseViewHolder {
         @BindView(R.id.tv_issue_number) TextView number;

@@ -17,6 +17,8 @@
 package com.github.pockethub.android;
 
 import android.util.Log;
+import android.content.Context;
+import androidx.multidex.MultiDex;
 
 import com.bugsnag.android.Bugsnag;
 
@@ -29,6 +31,12 @@ import dagger.android.DaggerApplication;
 public class PocketHub extends DaggerApplication {
 
     private ApplicationComponent applicationComponent;
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 
     @Override
     public void onCreate() {
